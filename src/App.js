@@ -7,7 +7,7 @@ import ProjectList from './components/ProjectList';
 
 function App() {
   return (
-    <div className="App" style={{ flexDirection: 'row' }}>
+    <div className="App">
       <PersonalProfile />
       <ProjectList />
     </div>
