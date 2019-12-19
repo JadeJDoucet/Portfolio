@@ -1,3 +1,3 @@
-#Jade Doucet Portfolio
+# My Portfolio
 
-##My personal website displaying previously completed projects
+> My personal website displaying previously completed projects
