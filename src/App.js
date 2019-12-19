@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 
+// import components
+import PersonalProfile from './components/PersonalProfile';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <PersonalProfile />
     </div>
   );
 }
