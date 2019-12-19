@@ -1,6 +1,6 @@
 const projects = [
     {
-        projectName: 'Scannar',
+        name: 'Scannar',
         description: 'Something about the app here',
         images: [],
     },
