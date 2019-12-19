@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
+import { Grid, Image } from 'semantic-ui-react'
+
+// import components
+import ProjectListItem from './ProjectListItem';
 
 // import projects
-import projects from '../../project-data/projects';
+import projects from '../project-data/projects';
 
 export default function ProjectList() {
   
   return (
-    <ul>
+    <Grid celled="internally">
       {projects.map((project) => (
-      <li>
-        {project.projectName}
-        {project.description}
-      </li>
+      <ProjectListItem project={project} />
         )
       )}
-    </ul>
+    </Grid>
   );
 };
