@@ -12,7 +12,6 @@ export default function ProjectListItem({ project }) {
       <Grid.Column>
         <h4>{name}</h4>
         <p>{description}</p>
-        <p></p>
       </Grid.Column>
     </Grid.Row>
   );
