@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Card, Image, Button, Visibility } from 'semantic-ui-react';
-// imports
-// import profilePhoto from '../../project-data/headshots/headshot-close.jpg';
 
 export default function PersonalProfile() {
   const [toggleEmail, setToggleEmail] = useState(false);
