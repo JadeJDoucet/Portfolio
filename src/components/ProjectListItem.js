@@ -7,7 +7,7 @@ export default function ProjectListItem({ project }) {
   return (
     <Grid.Row>
       <Grid.Column width={3}>
-        <Image src={require('../headshots/headshot-close.jpg')} />
+        <Image src={require('../project-data/headshots/headshot-close.jpg')} />
       </Grid.Column>
       <Grid.Column>
         <h4>{name}</h4>
