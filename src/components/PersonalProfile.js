@@ -9,7 +9,7 @@ export default function PersonalProfile() {
   return (
     <div id="profile-card">
       <Card>
-        <Image src={require("../headshots/headshot-close.jpg")} wrapped ui={false} />
+        <Image src={require("../project-data/headshots/headshot-close.jpg")} wrapped ui={false} />
         <Card.Content>
         <Card.Header>Jade Doucet</Card.Header>
         <Card.Meta>
