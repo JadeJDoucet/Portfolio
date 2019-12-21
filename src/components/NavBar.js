@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Menu } from 'semantic-ui-react';
 
 export default function NavBar() {
+  const [activeItem, setActiveItem] = useState('');
 
   const fixedMenuStyle = {
     backgroundColor: '#fff',
@@ -13,11 +14,21 @@ export default function NavBar() {
   return (
     <Menu
     borderless
-    attached="top"
+    className="ui header"
+    stackable
     style={fixedMenuStyle}
     >
-      <Menu.Item>
+      <Menu.Item
+        active={activeItem === 'blog'}
+        onClick={() => setActiveItem('blog')}
+      >
         Blog
+      </Menu.Item>
+      <Menu.Item
+        active={activeItem === 'about'}
+        onClick={() => setActiveItem('about')}
+      >
+        About Me
       </Menu.Item>
     </Menu>
   )
