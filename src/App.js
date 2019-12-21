@@ -4,12 +4,16 @@ import './App.css';
 // import components
 import PersonalProfile from './components/PersonalProfile';
 import ProjectList from './components/ProjectList';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <PersonalProfile />
-      <ProjectList />
+    <div>
+      <NavBar />
+      <div className="App">
+        <PersonalProfile />
+        <ProjectList />
+      </div>
     </div>
   );
 }

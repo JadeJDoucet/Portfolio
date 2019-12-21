@@ -26,25 +26,23 @@ export default function PersonalProfile() {
       onBottomVisible={() => setFixedProfile(false)}
       once={false}
     >
-      <div id="profile-card">
-        <Card
-          fixed={profileFixed ? 'top' : undefined}
-          style={profileFixed ? fixedProfileStyle : profileStyle}
-        >
-          <Image src={require("../project-data/headshots/headshot-close.jpg")} wrapped ui={false} />
-          <Card.Content>
-          <Card.Header>Jade Doucet</Card.Header>
-          <Card.Meta>
-              <span className='date'>Software Engineer</span>
-          </Card.Meta>
-            <Card.Description>I am a full-stack software engineer from New Orleans with a passion for technology.
-              I'm experienced in web, mobile, and game development. 
-              I've developed AR mobile apps, a variety of web apps, and video games. </Card.Description>
-            <Button onClick={() => setToggleEmail(!toggleEmail)}>Contact</Button>
-            {toggleEmail ? <Card.Description>jadejdoucet@gmail.com</Card.Description> : null}
-          </Card.Content>
-        </Card>
-      </div>
+      <Card
+        fixed={profileFixed ? 'top' : undefined}
+        style={profileFixed ? fixedProfileStyle : profileStyle}
+      >
+        <Image src={require("../project-data/headshots/headshot-close.jpg")} wrapped ui={false} />
+        <Card.Content>
+        <Card.Header>Jade Doucet</Card.Header>
+        <Card.Meta>
+            <span className='date'>Software Engineer</span>
+        </Card.Meta>
+          <Card.Description>I am a full-stack software engineer from New Orleans with a passion for technology.
+            I'm experienced in web, mobile, and game development. 
+            I've developed AR mobile apps, a variety of web apps, and video games. </Card.Description>
+          <Button onClick={() => setToggleEmail(!toggleEmail)}>Contact</Button>
+          {toggleEmail ? <Card.Description>jadejdoucet@gmail.com</Card.Description> : null}
+        </Card.Content>
+      </Card>
     </Visibility>
   )
 }
