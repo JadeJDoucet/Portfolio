@@ -14,7 +14,7 @@ export default function ProjectList() {
   };
 
   return (
-    <Grid style={gridStyle} className="float">
+    <Grid style={gridStyle}>
       {projects.map((project, i) => (
       <ProjectListItem key={i} project={project} />
         )

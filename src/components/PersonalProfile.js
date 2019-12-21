@@ -23,7 +23,7 @@ export default function PersonalProfile() {
   }
 
   return (
-    <div className="ui left sticky fixed" style={cardContainerStyle}>
+    <div className="" style={cardContainerStyle}>
       <Card
         style={profileFixed ? profileStyle : fixedProfileStyle}
       >
