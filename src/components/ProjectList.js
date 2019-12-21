@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Grid, Image } from 'semantic-ui-react'
+import React from 'react';
+import { Grid } from 'semantic-ui-react'
 
 // import components
 import ProjectListItem from './ProjectListItem';
@@ -8,11 +8,14 @@ import ProjectListItem from './ProjectListItem';
 import projects from '../project-data/projects';
 
 export default function ProjectList() {
-  
+  const gridStyle = {
+    marginLeft: '17%', // aligns next to profile card
+  };
+
   return (
-    <Grid celled="internally">
-      {projects.map((project) => (
-      <ProjectListItem project={project} />
+    <Grid style={gridStyle}>
+      {projects.map((project, i) => (
+      <ProjectListItem key={i} project={project} />
         )
       )}
     </Grid>
