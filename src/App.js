@@ -18,13 +18,13 @@ function App() {
       <div
       style={appStyle}
       >
-        <Grid className="stackable">
-          <Grid.Row>
+        <Grid>
+          <Grid.Column width={3}>
             <PersonalProfile />
-          </Grid.Row>
-          <Grid.Row>
+          </Grid.Column>
+          <Grid.Column width={12}>
             <ProjectList />
-          </Grid.Row>
+          </Grid.Column>
         </Grid>
       </div>
     </div>
