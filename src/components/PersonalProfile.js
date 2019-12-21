@@ -6,29 +6,28 @@ export default function PersonalProfile() {
   const [profileFixed, setFixedProfile] = useState(false);
   
   const profileStyle = {
-    border: 'none',
-    borderRadius: 0,
-    boxShadow: 'none',
-    marginBottom: '1em',
-    marginTop: '4em',
-    transition: 'box-shadow 0.5s ease, padding 0.5s ease',
-  }
-
-  const fixedProfileStyle = {
     backgroundColor: '#fff',
     border: '1px solid #ddd',
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+    transition: 'box-shadow 0.5s ease, padding 0.5s ease',
+  }
+  
+  const fixedProfileStyle = {
+    margin: 'auto',
+    backgroundColor: '#fff',
+    border: '1px solid #ddd',
+    boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+    transition: 'box-shadow 0.5s ease, padding 0.5s ease',
   }
 
   return (
     <Visibility
-      onTopPassed={() => setFixedProfile(true)}
-      onBottomVisible={() => setFixedProfile(false)}
+      // className="ui fixed header"
       once={false}
     >
       <Card
         fixed={profileFixed ? 'top' : undefined}
-        style={profileFixed ? fixedProfileStyle : profileStyle}
+        style={profileFixed ? profileStyle : fixedProfileStyle}
       >
         <Image src={require("../project-data/headshots/headshot-close.jpg")} wrapped ui={false} />
         <Card.Content>
