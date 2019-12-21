@@ -19,16 +19,18 @@ export default function NavBar() {
     style={fixedMenuStyle}
     >
       <Menu.Item
-        active={activeItem === 'blog'}
-        onClick={() => setActiveItem('blog')}
-      >
-        Blog
-      </Menu.Item>
-      <Menu.Item
+      className="right item"
         active={activeItem === 'about'}
         onClick={() => setActiveItem('about')}
       >
         About Me
+      </Menu.Item>
+      <Menu.Item
+        // className="right item"
+        active={activeItem === 'contact'}
+        onClick={() => setActiveItem('contact')}
+      >
+        Contact
       </Menu.Item>
     </Menu>
   )
