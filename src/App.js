@@ -9,7 +9,11 @@ import NavBar from './components/NavBar';
 
 function App() {
   const appStyle = {
-    marginTop: '4%',
+    marginTop: '4%', // place items under nav bar
+  }
+  let RowOrCol = Grid.Column;
+  if (window.innerWidth < 1000) {
+    RowOrCol = Grid.Row;
   }
 
   return (
@@ -19,12 +23,12 @@ function App() {
       style={appStyle}
       >
         <Grid>
-          <Grid.Column width={3}>
+          <RowOrCol width={3}>
             <PersonalProfile />
-          </Grid.Column>
-          <Grid.Column width={12}>
+          </RowOrCol>
+          <RowOrCol width={12}>
             <ProjectList />
-          </Grid.Column>
+          </RowOrCol>
         </Grid>
       </div>
     </div>

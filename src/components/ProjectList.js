@@ -9,7 +9,7 @@ import projects from '../project-data/projects';
 
 export default function ProjectList() {
   const gridStyle = {
-    marginLeft: '17%', // aligns next to profile card
+    // marginLeft: '17%', // aligns next to profile card
     // zIndex: 800
   };
 
