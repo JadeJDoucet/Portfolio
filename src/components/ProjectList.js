@@ -8,9 +8,12 @@ import ProjectListItem from './ProjectListItem';
 import projects from '../project-data/projects';
 
 export default function ProjectList() {
-  
+  const gridStyle = {
+    marginLeft: '17%', // aligns next to profile card
+  };
+
   return (
-    <Grid>
+    <Grid style={gridStyle}>
       {projects.map((project, i) => (
       <ProjectListItem key={i} project={project} />
         )
