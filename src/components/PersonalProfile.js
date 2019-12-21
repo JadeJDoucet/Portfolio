@@ -13,23 +13,21 @@ export default function PersonalProfile() {
   }
   
   const fixedProfileStyle = {
-    margin: 'auto',
     backgroundColor: '#fff',
     border: '1px solid #ddd',
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
-    transition: 'box-shadow 0.5s ease, padding 0.5s ease',
   }
 
   return (
-    <Visibility
-      // className="ui fixed header"
-      once={false}
-    >
+    <div className="ui left sticky fixed">
       <Card
-        fixed={profileFixed ? 'top' : undefined}
         style={profileFixed ? profileStyle : fixedProfileStyle}
       >
-        <Image src={require("../project-data/headshots/headshot-close.jpg")} wrapped ui={false} />
+        <Image
+        src={require("../project-data/headshots/headshot-close.jpg")}
+        wrapped
+        ui={false}
+        />
         <Card.Content>
         <Card.Header>Jade Doucet</Card.Header>
         <Card.Meta>
@@ -42,6 +40,6 @@ export default function PersonalProfile() {
           {toggleEmail ? <Card.Description>jadejdoucet@gmail.com</Card.Description> : null}
         </Card.Content>
       </Card>
-    </Visibility>
+    </div>
   )
 }
