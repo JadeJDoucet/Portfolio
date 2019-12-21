@@ -18,8 +18,12 @@ export default function PersonalProfile() {
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
   }
 
+  const cardContainerStyle = {
+    marginTop: '3.3%',
+  }
+
   return (
-    <div className="ui left sticky fixed">
+    <div className="ui left sticky fixed" style={cardContainerStyle}>
       <Card
         style={profileFixed ? profileStyle : fixedProfileStyle}
       >
