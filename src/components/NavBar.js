@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <Menu
     borderless
-    className="ui top fixed menu"
+    className="ui top fixed menu header"
     stackable
     style={fixedMenuStyle}
     >
@@ -26,7 +26,6 @@ export default function NavBar() {
         About Me
       </Menu.Item>
       <Menu.Item
-        // className="right item"
         active={activeItem === 'contact'}
         onClick={() => setActiveItem('contact')}
       >
