@@ -2,19 +2,19 @@ const projects = [
   {
     name: 'Scannar',
     description: 'Augmented reality pricing solution',
-    coverImage: '../pathToImages',
+    coverImage: './project-photos/scannar-proto-image.png',
     images: [],
   },
   {
     name: 'Readr',
     description: 'Reading suggestion / open source reading application', 
-    coverImage: './pathtoImage',
+    coverImage: './project-photos/scannar-proto-image.png',
     images: [],
   },
   {
     name: 'Adopt-A-Pothole',
     description: 'Crowdfunding app to restore New Orleans streets',
-    coverImage: './path here to something',
+    coverImage: './project-photos/scannar-proto-image.png',
     images: [],
   },
 ];
