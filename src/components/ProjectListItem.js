@@ -9,8 +9,8 @@ export default function ProjectListItem({ project }) {
   }
 
   const rowStyle = {
-    marginTop: '4.05%',
-    marginBottom: '-10%',
+    // marginTop: '4.05%',
+    // marginBottom: '5%',
   }
 
   return (

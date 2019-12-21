@@ -19,7 +19,7 @@ export default function PersonalProfile() {
   }
 
   const cardContainerStyle = {
-    marginTop: '3.3%',
+    // marginTop: '3.3%',
   }
 
   return (
