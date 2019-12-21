@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <Menu
     borderless
-    className="ui header"
+    className="ui top fixed menu"
     stackable
     style={fixedMenuStyle}
     >
