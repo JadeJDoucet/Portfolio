@@ -8,29 +8,45 @@ import ProjectList from './components/ProjectList';
 import NavBar from './components/NavBar';
 
 function App() {
-  const appStyle = {
+  const webStyle = {
     marginTop: '4%', // place items under nav bar
   }
-  let RowOrCol = Grid.Column;
-  if (window.innerWidth < 1000) {
-    RowOrCol = Grid.Row;
+
+  const mobileStyle = {
+    marginTop: '10%'
   }
+
+  const mobileView = () => (
+    <Grid>
+      <NavBar />
+      <Grid.Row width={3} style={mobileStyle}>
+        <PersonalProfile />
+      </Grid.Row>
+      <Grid.Row width={12}>
+        <ProjectList />
+      </Grid.Row>
+    </Grid>
+  )
 
   return (
     <div>
-      <NavBar />
-      <div
-      style={appStyle}
-      >
-        <Grid>
-          <RowOrCol width={3}>
-            <PersonalProfile />
-          </RowOrCol>
-          <RowOrCol width={12}>
-            <ProjectList />
-          </RowOrCol>
-        </Grid>
+      {window.innerWidth < 1000 ? mobileView() : 
+        <div style={{ flex: 1 }}>
+        <NavBar />
+        <div
+        style={webStyle}
+        >
+          <Grid>
+            <Grid.Column width={3}>
+              <PersonalProfile />
+            </Grid.Column>
+            <Grid.Column width={12}>
+              <ProjectList />
+            </Grid.Column>
+          </Grid>
+        </div>
       </div>
+      }
     </div>
   );
 }
