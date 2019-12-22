@@ -13,7 +13,7 @@ function App() {
   }
 
   const mobileStyle = {
-    marginTop: '10%'
+    marginTop: '25%',
   }
 
   const mobileView = () => (
