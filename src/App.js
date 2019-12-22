@@ -37,10 +37,10 @@ function App() {
         style={webStyle}
         >
           <Grid>
-            <Grid.Column width={3}>
+            <Grid.Column width={5}>
               <PersonalProfile />
             </Grid.Column>
-            <Grid.Column width={12}>
+            <Grid.Column width={14}>
               <ProjectList />
             </Grid.Column>
           </Grid>
