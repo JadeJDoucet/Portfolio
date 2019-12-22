@@ -13,7 +13,7 @@ function App() {
   }
 
   const mobileStyle = {
-    marginTop: '25%',
+    marginTop: '25%', // place items under nav bar
   }
 
   const mobileView = () => (
