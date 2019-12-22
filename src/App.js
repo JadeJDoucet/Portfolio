@@ -20,7 +20,7 @@ function App() {
     <Grid>
       <NavBar />
       <Grid.Row width={3} style={mobileStyle}>
-        <PersonalProfile />
+        <PersonalProfile mobile/>
       </Grid.Row>
       <Grid.Row width={12}>
         <ProjectList />

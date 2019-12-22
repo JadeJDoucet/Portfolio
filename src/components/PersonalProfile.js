@@ -1,14 +1,13 @@
 import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
 
-export default function PersonalProfile() {
-  // const [toggleEmail, setToggleEmail] = useState(false);
-  // const [profileFixed, setFixedProfile] = useState(false);
-  
+export default function PersonalProfile({ mobile }) {
   const fixedProfileStyle = {
+    position: mobile ? null : 'fixed',
     backgroundColor: '#fff',
     border: '1px solid #ddd',
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+    // padding: 5,
   }
 
   return (

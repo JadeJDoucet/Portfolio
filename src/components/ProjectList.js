@@ -10,7 +10,7 @@ import projects from '../project-data/projects';
 export default function ProjectList() {
 
   return (
-    <Grid>
+    <Grid style={{ padding: 15 }}>
       {projects.map((project, i) => (
       <ProjectListItem key={i} project={project} />
         )
