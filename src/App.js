@@ -10,7 +10,7 @@ import NavBar from './components/NavBar';
 function App() {
   const styles = {
     webStyle: {
-      marginTop: '4%', // place items under nav bar
+      marginTop: '3.8%', // place items under nav bar
     },
     mobileStyle: {
       marginTop: '25%', // place items under nav bar
