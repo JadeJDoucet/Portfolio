@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       {window.innerWidth < 1000 ? mobileView() : 
-        <div style={{ flex: 1 }}>
+        <div>
         <NavBar />
         <div
         style={webStyle}

@@ -27,9 +27,14 @@ export default function PersonalProfile() {
       </Card.Meta>
         <Card.Description>I am a full-stack software engineer from New Orleans with a passion for technology.
           I'm experienced in web, mobile, and game development. 
-          I've developed AR mobile apps, a variety of web apps, and video games. </Card.Description>
-        <Button onClick={() => setToggleEmail(!toggleEmail)}>Contact</Button>
-        {toggleEmail ? <Card.Description>jadejdoucet@gmail.com</Card.Description> : null}
+          I've developed AR mobile apps, a variety of web apps, and video games.
+        </Card.Description>
+        <a href="https://github.com/JadeJDoucet">
+          <i class="github icon"></i>
+        </a>
+        <a href="https://linkedin.com/in/jadejdoucet">
+          <i class="linkedin icon"></i>
+        </a>
       </Card.Content>
     </Card>
   )
