@@ -19,7 +19,7 @@ function App() {
   const mobileView = () => (
     <Grid>
       <NavBar />
-      <Grid.Row width={3} style={mobileStyle}>
+      <Grid.Row width={5} style={mobileStyle}>
         <PersonalProfile mobile/>
       </Grid.Row>
       <Grid.Row width={12}>
