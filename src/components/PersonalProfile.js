@@ -22,10 +22,10 @@ export default function PersonalProfile() {
       />
       <Card.Content>
       <Card.Header>Jade Doucet
-        <a href="https://github.com/JadeJDoucet" style={{ marginLeft: '35%', color: 'black' }}>
+        <a href="https://github.com/JadeJDoucet" style={{ marginLeft: '25%', color: 'black', fontSize: 25 }}>
           <i className="github icon"></i>
         </a>
-          <a href="https://linkedin.com/in/jadejdoucet" style={{ color: '#0077B5' }}>
+          <a href="https://linkedin.com/in/jadejdoucet" style={{ color: '#0077B5', fontSize: 25 }}>
           <i className="linkedin icon"></i>
         </a>
       </Card.Header>
