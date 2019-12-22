@@ -8,13 +8,22 @@ import ProjectList from './components/ProjectList';
 import NavBar from './components/NavBar';
 
 function App() {
-  const webStyle = {
-    marginTop: '4%', // place items under nav bar
+  const styles = {
+    webStyle: {
+      marginTop: '4%', // place items under nav bar
+    },
+    mobileStyle: {
+      marginTop: '25%', // place items under nav bar
+    },
+    listCol: {
+      marginLeft: '17.5%',
+      marginTop: '-1.6%'
+    },
+    profileCol: {
+      marginLeft: 5,
+    }
   }
-
-  const mobileStyle = {
-    marginTop: '25%', // place items under nav bar
-  }
+  const { webStyle, mobileStyle, listCol, profileCol } = styles;
 
   const mobileView = () => (
     <Grid>
@@ -36,11 +45,11 @@ function App() {
         <div
         style={webStyle}
         >
-          <Grid>
-            <Grid.Column width={5}>
+          <Grid columns={2}>
+            <Grid.Column width={4} style={profileCol}>
               <PersonalProfile />
             </Grid.Column>
-            <Grid.Column width={14}>
+            <Grid.Column width={14} style={listCol}>
               <ProjectList />
             </Grid.Column>
           </Grid>
