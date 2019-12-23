@@ -32,7 +32,7 @@ function App() {
         <PersonalProfile mobile/>
       </Grid.Row>
       <Grid.Row width={12}>
-        <ProjectList />
+        <ProjectList mobile/>
       </Grid.Row>
     </Grid>
   )

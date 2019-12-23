@@ -4,10 +4,10 @@ import { Card, Image } from 'semantic-ui-react';
 export default function PersonalProfile({ mobile }) {
   const fixedProfileStyle = {
     position: mobile ? null : 'fixed',
+    margin: mobile? 'auto' : null,
     backgroundColor: '#fff',
     border: '1px solid #ddd',
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
-    // padding: 5,
   }
 
   return (
