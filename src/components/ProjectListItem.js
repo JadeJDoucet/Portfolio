@@ -7,6 +7,13 @@ export default function ProjectListItem({ project }) {
   const imageStyle = {
     maxHeight: '50em',
   }
+  
+  const hList = {
+    listStyleType: 'none',
+    margin: 0,
+    padding: 0,
+    overflow: 'hidden',
+  }
 
   return (
     <Grid.Row style={{ boxShadow: '0px 1px 5px grey', borderRadius: 5, marginBottom: 5 }}>
@@ -16,15 +23,17 @@ export default function ProjectListItem({ project }) {
       <Grid.Column width={6}>
         <h1>{name}</h1>
         <p>{description}</p>
-        <Grid.Row>
           {images.length ? 
-            images.map((img) => {
+              <ul style={hList}>
+            {images.map((img, i) => {
               return (
-                <Image src={img} />
+              <Image key={i} src={img} style={{ maxHeight: '325px', float: 'left', padding: 10 }}/>
               )
-            }) : null
+            })
+            }
+              </ul>
+            : null
           }
-        </Grid.Row>
       </Grid.Column>
     </Grid.Row>
   );
