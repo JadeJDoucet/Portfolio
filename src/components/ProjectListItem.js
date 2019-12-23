@@ -8,11 +8,17 @@ export default function ProjectListItem({ project }) {
     maxHeight: '50em',
   }
   
-  const hList = {
+  const hzList = {
     listStyleType: 'none',
     margin: 0,
     padding: 0,
     overflow: 'hidden',
+  }
+
+  const hzItem = {
+    // maxHeight: '325px',
+    float: 'left',
+    padding: 10,
   }
 
   return (
@@ -24,10 +30,10 @@ export default function ProjectListItem({ project }) {
         <h1>{name}</h1>
         <p>{description}</p>
           {images.length ? 
-              <ul style={hList}>
+              <ul style={hzList}>
             {images.map((img, i) => {
               return (
-              <Image key={i} src={img} style={{ maxHeight: '325px', float: 'left', padding: 10 }}/>
+              <Image key={i} src={img} size='small' rounded style={hzItem}/>
               )
             })
             }
