@@ -3,7 +3,11 @@ const projects = [
     name: 'Scannar',
     description: 'Augmented reality pricing solution',
     coverImage: require('./project-photos/scannar-proto-image.png'),
-    images: [],
+    images: [
+      require('./project-photos/scannar-products.png'), 
+      require('./project-photos/scannar-ar.png'),
+      require('./project-photos/scannar-product.png'),
+    ],
   },
   {
     name: 'Readr',
