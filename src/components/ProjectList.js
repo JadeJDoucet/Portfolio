@@ -12,7 +12,7 @@ export default function ProjectList({ mobile }) {
   return (
     <Grid style={{ padding: 15 }}>
       {projects.map((project, i) => (
-      <ProjectListItem key={i} project={project} mobile={mobile}/>
+      <ProjectListItem key={i} project={project} mobile={mobile} />
         )
       )}
     </Grid>
