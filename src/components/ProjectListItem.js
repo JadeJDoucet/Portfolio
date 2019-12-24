@@ -3,6 +3,8 @@ import { Grid, Image } from 'semantic-ui-react';
 
 export default function ProjectListItem({ project, mobile }) {
   const { name, description, coverImage, images } = project;
+  
+  // to do: add onClick to images to blow them up
 
   const imageStyle = {
     maxHeight: '50em',

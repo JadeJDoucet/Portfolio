@@ -1,12 +1,22 @@
 const projects = [
   {
-    name: 'Scannar',
+    name: 'Scannar (Customer)',
     description: 'Augmented reality pricing solution',
     coverImage: require('./project-photos/scannar-proto-image.png'),
     images: [
       require('./project-photos/scannar-products.png'), 
       require('./project-photos/scannar-ar.png'),
       require('./project-photos/scannar-product.png'),
+    ],
+  },
+  {
+    name: 'Scannar (Business)',
+    description: 'Augmented reality pricing solution',
+    coverImage: require('./project-photos/scannar-ss/scannar-business-login.png'),
+    images: [
+      require('./project-photos/scannar-ss/scannar-business-no-products.png'),
+      require('./project-photos/scannar-ss/scannar-business-create.png'),
+      require('./project-photos/scannar-ss/scannar-business-products.png'),
     ],
   },
   {
