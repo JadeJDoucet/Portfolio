@@ -13,7 +13,7 @@ function App() {
       marginTop: '3.8%', // place items under nav bar
     },
     mobileStyle: {
-      marginTop: '25%', // place items under nav bar
+      marginTop: '14%', // place items under nav bar
     },
     listCol: {
       marginLeft: '17.5%',
@@ -27,7 +27,7 @@ function App() {
 
   const mobileView = () => (
     <Grid>
-      <NavBar />
+      <NavBar mobile />
       <Grid.Row width={5} style={mobileStyle}>
         <PersonalProfile mobile/>
       </Grid.Row>
