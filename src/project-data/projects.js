@@ -32,8 +32,11 @@ const projects = [
   {
     name: 'Adopt-A-Pothole',
     description: 'Crowdfunding app to restore New Orleans streets',
-    coverImage: require('./project-photos/scannar-proto-image.png'),
-    images: [],
+    coverImage: require('./project-photos/adopt-a-pothole-ss/adopt-home.jpg'),
+    images: [
+      require('./project-photos/adopt-a-pothole-ss/adopt-report.jpg'),
+      require('./project-photos/adopt-a-pothole-ss/adopt-map.jpg'),
+    ],
   },
 ];
 
