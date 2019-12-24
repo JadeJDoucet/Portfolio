@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Grid, Image } from 'semantic-ui-react';
 
 export default function ProjectListItem({ project, mobile }) {
-  const { name, description, coverImage, images } = project;
+  const { name, description, coverImage, images, url } = project;
   const [currImage, setCurrImage] = useState(null);
 
  // styles
@@ -57,18 +57,22 @@ export default function ProjectListItem({ project, mobile }) {
 
   return (
     <Grid.Row style={{ boxShadow: '0px 1px 5px grey', borderRadius: 5, marginBottom: 5 }}>
-      <Grid.Column width={3} >
-        <Image src={coverImage} rounded size={'large'}/>
+      <Grid.Column width={3}>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <Image src={coverImage} rounded size={'large'}/>
+        </a>
       </Grid.Column>
       <Grid.Column width={13}>
-        <h1>{name}</h1>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <h1>{name}</h1>
+        </a>
         <p>{description}</p>
           {images.length ? 
               <ul style={hzList}>
             {images.map((img, i) => {
               return (
-                <li>
-                  <Image key={i} src={img} size={imgSize(img)} bordered style={hzItem} onClick={() => handleImageClick(img)}/>
+                <li key={i}>
+                  <Image src={img} size={imgSize(img)} bordered style={hzItem} onClick={() => handleImageClick(img)}/>
                 </li>
               )
             })

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Dropdown } from 'semantic-ui-react';
 
-export default function NavBar() {
+export default function NavBar({ mobile }) {
   const [activeItem, setActiveItem] = useState('');
 
   const fixedMenuStyle = {
@@ -10,7 +10,24 @@ export default function NavBar() {
     boxShadow: '0px 4px 5px rgba(0, 0, 0, 0.2)',
     borderRadius: 5,
   };
-
+  // const whichBar = () => {
+if (mobile) {
+  return (
+    <Menu
+      borderless
+      className="ui top fixed menu header"
+      stackable
+      style={fixedMenuStyle}
+    >
+      <Dropdown item icon='bars' /*removed 'simple' here*/>
+          <Dropdown.Menu>
+            <Dropdown.Item>Document</Dropdown.Item>
+            <Dropdown.Item>Image</Dropdown.Item>
+          </Dropdown.Menu>
+      </Dropdown>
+    </Menu>
+  )
+} else {
   return (
     <Menu
     borderless
@@ -33,4 +50,5 @@ export default function NavBar() {
       </Menu.Item>
     </Menu>
   )
+}
 }
