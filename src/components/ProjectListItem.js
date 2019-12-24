@@ -16,14 +16,13 @@ export default function ProjectListItem({ project }) {
   }
 
   const hzItem = {
-    // maxHeight: '325px',
     float: 'left',
     padding: 10,
   }
 
   return (
     <Grid.Row style={{ boxShadow: '0px 1px 5px grey', borderRadius: 5, marginBottom: 5 }}>
-      <Grid.Column width={3}>
+      <Grid.Column width={3} >
         <Image src={coverImage} rounded style={imageStyle} />
       </Grid.Column>
       <Grid.Column width={6}>
