@@ -22,8 +22,12 @@ const projects = [
   {
     name: 'Readr',
     description: 'Reading suggestion / open source reading application', 
-    coverImage: require('./project-photos/scannar-proto-image.png'),
-    images: [],
+    coverImage: require('./project-photos/readr-ss/readr-login.png'),
+    images: [
+      require('./project-photos/readr-ss/readr-suggestion.png'),
+      require('./project-photos/readr-ss/readr-saved.png'),
+      require('./project-photos/readr-ss/readr-reader.png'),
+    ],
   },
   {
     name: 'Adopt-A-Pothole',
