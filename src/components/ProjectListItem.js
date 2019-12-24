@@ -3,7 +3,7 @@ import { Grid, Image } from 'semantic-ui-react';
 
 export default function ProjectListItem({ project, mobile }) {
   const { name, description, coverImage, images } = project;
-  
+
   // to do: add onClick to images to blow them up
 
   const imageStyle = {
@@ -20,6 +20,7 @@ export default function ProjectListItem({ project, mobile }) {
   const hzItem = {
     float: 'left',
     padding: 10,
+    borderRadius: 5,
   }
 
   return (
@@ -34,7 +35,9 @@ export default function ProjectListItem({ project, mobile }) {
               <ul style={hzList}>
             {images.map((img, i) => {
               return (
-              <Image key={i} src={img} size={mobile ? 'tiny' : 'small'} rounded style={hzItem}/>
+                <li>
+                  <Image key={i} src={img} size={mobile ? 'tiny' : 'small'} bordered style={hzItem}/>
+                </li>
               )
             })
             }
