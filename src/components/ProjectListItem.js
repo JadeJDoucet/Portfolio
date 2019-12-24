@@ -5,12 +5,7 @@ export default function ProjectListItem({ project, mobile }) {
   const { name, description, coverImage, images } = project;
   const [currImage, setCurrImage] = useState(null);
 
-  // to do: add onClick to images to blow them up
-
-  const imageStyle = {
-    // maxHeight: '50em',
-  }
-  
+ // styles
   const hzList = {
     listStyleType: 'none',
     margin: 0,
@@ -23,7 +18,12 @@ export default function ProjectListItem({ project, mobile }) {
     margin: 5,
     borderRadius: 5,
   }
+
+  // dynamic sizing for mobile
   const imgSize = (image) => {
+    if (name === 'Readr') {
+      return handleReadr(image);
+    }
     if (currImage === image) {
       if (mobile) {
         return 'small';
@@ -31,23 +31,36 @@ export default function ProjectListItem({ project, mobile }) {
         return 'medium';
       }
     }
-  return mobile ? 'tiny' : 'small'
+  return mobile ? 'tiny' : 'small';
   };
 
+  // handle clicking to zoom
   const handleImageClick = (img) => {
     if (img === currImage) {
       setCurrImage(null);
     } else {
       setCurrImage(img);
     }
-  }
+  };
+
+  // handles sizing for Readr images - These are smaller
+  const handleReadr = (image) => {
+    if (currImage === image) {
+      if (mobile) {
+        return 'medium';
+      } else {
+        return 'large';
+      }
+    }
+    return mobile ? 'small' : 'medium';
+  };
 
   return (
     <Grid.Row style={{ boxShadow: '0px 1px 5px grey', borderRadius: 5, marginBottom: 5 }}>
       <Grid.Column width={3} >
-        <Image src={coverImage} rounded size={mobile ? 'large' : 'medium'} />
+        <Image src={coverImage} rounded size={'large'}/>
       </Grid.Column>
-      <Grid.Column width={10}>
+      <Grid.Column width={13}>
         <h1>{name}</h1>
         <p>{description}</p>
           {images.length ? 
