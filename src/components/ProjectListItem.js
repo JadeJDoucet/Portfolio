@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Image } from 'semantic-ui-react';
 
-export default function ProjectListItem({ project }) {
+export default function ProjectListItem({ project, mobile }) {
   const { name, description, coverImage, images } = project;
 
   const imageStyle = {
@@ -32,7 +32,7 @@ export default function ProjectListItem({ project }) {
               <ul style={hzList}>
             {images.map((img, i) => {
               return (
-              <Image key={i} src={img} size='small' rounded style={hzItem}/>
+              <Image key={i} src={img} size={mobile ? 'tiny' : 'small'} rounded style={hzItem}/>
               )
             })
             }
