@@ -20,7 +20,7 @@ function App() {
     listCol: {
       marginLeft: '17.5%',
       marginTop: '-1.6%',
-      overflow: 'hidden'
+      overflowX: 'hidden'
     },
     profileCol: {
       marginLeft: 5,
@@ -68,7 +68,7 @@ const toRender = () => {
 }
 
   return (
-    <div>
+    <div style={{ overflowX: 'hidden' }}>
       {toRender()}
     </div>
   );
