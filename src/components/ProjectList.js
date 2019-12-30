@@ -10,7 +10,7 @@ import projects from '../project-data/projects';
 export default function ProjectList({ mobile }) {
 
   return (
-    <Grid style={{ padding: 15 }}>
+    <Grid style={{ padding: 15}}>
       {projects.map((project, i) => (
       <ProjectListItem key={i} project={project} mobile={mobile} />
         )

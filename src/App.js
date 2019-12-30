@@ -28,12 +28,12 @@ function App() {
   const { webStyle, mobileStyle, listCol, profileCol } = styles;
 
   const mobileViewMain = () => (
-    <Grid>
+    <Grid style={{ overflowX: 'hidden' }}>
       <NavBar mobile setContact={setContact}/>
-      <Grid.Row width={5} style={mobileStyle}>
+      <Grid.Row style={mobileStyle}>
         <PersonalProfile mobile/>
       </Grid.Row>
-      <Grid.Row width={12}>
+      <Grid.Row>
         <ProjectList mobile/>
       </Grid.Row>
     </Grid>
@@ -67,7 +67,7 @@ const toRender = () => {
 }
 
   return (
-    <div style={{ overflowX: 'hidden' }}>
+    <div>
       {toRender()}
     </div>
   );
