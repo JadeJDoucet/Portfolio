@@ -6,6 +6,7 @@ import { Grid } from 'semantic-ui-react';
 import PersonalProfile from './components/PersonalProfile';
 import ProjectList from './components/ProjectList';
 import NavBar from './components/NavBar';
+import background from './project-data/wallpapers/green-textured.jpg';
 
 function App() {
   const [contact, setContact] = useState(false);
@@ -49,7 +50,7 @@ function App() {
           <Grid.Column width={4} style={profileCol}>
             <PersonalProfile />
           </Grid.Column>
-          <Grid.Column width={14} style={listCol}>
+          <Grid.Column width={13} style={listCol}>
             <ProjectList />
           </Grid.Column>
         </Grid>

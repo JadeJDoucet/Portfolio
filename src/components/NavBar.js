@@ -5,7 +5,7 @@ export default function NavBar({ mobile, setContact }) {
   const [activeItem, setActiveItem] = useState('');
 
   const fixedMenuStyle = {
-    backgroundColor: '#fff',
+    backgroundColor: '#058E3F',
     border: '1px solid #ddd',
     boxShadow: '0px 4px 5px rgba(0, 0, 0, 0.2)',
     borderRadius: 5,
@@ -21,7 +21,7 @@ export default function NavBar({ mobile, setContact }) {
         >
           <Dropdown item icon='bars' /*removed 'simple' here*/>
               <Dropdown.Menu>
-                <Dropdown.Item>Contact</Dropdown.Item>
+              <Dropdown.Item style={{ color: '#fff' }}>Email</Dropdown.Item>
               </Dropdown.Menu>
           </Dropdown>
         </Menu>
@@ -36,7 +36,8 @@ export default function NavBar({ mobile, setContact }) {
         onClick={() => setActiveItem('')}
         >
           <Menu.Item
-          className="right item"
+            style={{ color: '#fff' }}
+            className="right item"
             active={activeItem === 'contact'}
             onClick={() => {setActiveItem('contact'); window.location.href="mailto:'jadejdoucet@gmail.com';"}}
           >
