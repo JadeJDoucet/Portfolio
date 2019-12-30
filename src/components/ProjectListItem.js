@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Grid, Image } from 'semantic-ui-react';
 
 export default function ProjectListItem({ project, mobile }) {
   const { name, description, coverImage, images, url } = project;
-  const [currImage, setCurrImage] = useState(null);
 
  // styles
   const hzList = {
@@ -24,34 +23,16 @@ export default function ProjectListItem({ project, mobile }) {
     if (name === 'Readr') {
       return handleReadr(image);
     }
-    if (currImage === image) {
-      if (mobile) {
-        return 'small';
-      } else {
-        return 'medium';
-      }
-    }
   return mobile ? 'tiny' : 'small';
   };
 
   // handle clicking to zoom
   const handleImageClick = (img) => {
-    if (img === currImage) {
-      setCurrImage(null);
-    } else {
-      setCurrImage(img);
-    }
+    // To do: handle image clicks for horiz-scroll gallery
   };
 
   // handles sizing for Readr images - These are smaller
   const handleReadr = (image) => {
-    if (currImage === image) {
-      if (mobile) {
-        return 'medium';
-      } else {
-        return 'large';
-      }
-    }
     return mobile ? 'small' : 'medium';
   };
 

@@ -19,7 +19,8 @@ function App() {
     },
     listCol: {
       marginLeft: '17.5%',
-      marginTop: '-1.6%'
+      marginTop: '-1.6%',
+      overflow: 'hidden'
     },
     profileCol: {
       marginLeft: 5,
@@ -33,7 +34,7 @@ function App() {
       <Grid.Row width={5} style={mobileStyle}>
         <PersonalProfile mobile/>
       </Grid.Row>
-      <Grid.Row width={12}>
+      <Grid.Row width={12} style={{ overflow: 'hidden' }}>
         <ProjectList mobile/>
       </Grid.Row>
     </Grid>
