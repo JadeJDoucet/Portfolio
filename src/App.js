@@ -6,7 +6,6 @@ import { Grid } from 'semantic-ui-react';
 import PersonalProfile from './components/PersonalProfile';
 import ProjectList from './components/ProjectList';
 import NavBar from './components/NavBar';
-import background from './project-data/wallpapers/green-textured.jpg';
 
 function App() {
   const [contact, setContact] = useState(false);
