@@ -32,8 +32,9 @@ export default function PersonalProfile({ mobile }) {
           <span className='date'>Software Engineer</span>
       </Card.Meta>
         <Card.Description>I am a full-stack software engineer from New Orleans with a passion for technology.
-          I'm experienced in web, mobile, and game development. 
-          I've developed AR mobile apps, a variety of web apps, and video games.
+          I've built web and mobile apps with JavaScript and Node, as well as video games within Unity. 
+          I'm proficient in full stack development, whether it's designing a front-end or back-end, dealing with APIs, deploying, or constructing databases with SQL or NoSQL.
+          For any questions, feel free to contact me via <a href="mailto:jadejdoucet@gmail.com">email</a>.
         </Card.Description>
       </Card.Content>
     </Card>
