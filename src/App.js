@@ -59,6 +59,7 @@ function App() {
 
 const toRender = () => {
   if (contact) {
+    // To do: Add dynamic contact page
     return <div>contact page</div>
   } else {
     return window.innerWidth < 1000 ? mobileViewMain() : desktopViewMain();
