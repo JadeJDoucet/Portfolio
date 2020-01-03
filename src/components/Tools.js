@@ -3,7 +3,7 @@ import { Grid, List, ListItem, ListItemText, Typography } from '@material-ui/cor
 
 export default function Tools() {
   return (
-    <section id="tools">
+    <section id="tools" style={{ textAlign: 'center' }}>
       <Grid container spacing={2}>
         <Grid item xs={12} style={{ paddingTop: '3%' }}>
           <Typography variant="h5">My Tools </Typography>

@@ -21,6 +21,9 @@ export default function NavBar() {
       <Link color="inherit" href="#projects">
         Projects
       </Link>
+      <Link color="inherit" href="#tools">
+        Skills
+      </Link>
       <Link color="inherit" href="#contact">
         Contact
       </Link>
