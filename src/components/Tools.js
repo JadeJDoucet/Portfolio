@@ -4,7 +4,8 @@ import { Grid, List, ListItem, ListItemText, Typography } from '@material-ui/cor
 export default function Tools() {
   const styles = {
     toolWrapper: {
-      marginLeft: window.innerWidth > 1000 ? '40%' : '15%',
+      // marginLeft: window.innerWidth > 1000 ? '40%' : '15%',
+      marginLeft: '15%',
     },
   };
 
