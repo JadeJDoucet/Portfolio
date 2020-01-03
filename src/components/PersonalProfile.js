@@ -7,7 +7,7 @@ export default function PersonalProfile({ mobile }) {
       backgroundColor: 'rgb(51, 51, 51)',
       textAlign: 'center',
       paddingTop: '3%',
-      paddingBottom: '3%'
+      paddingBottom: '3%',
     },
     image: {
       display: 'block',
