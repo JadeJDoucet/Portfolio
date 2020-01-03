@@ -3,9 +3,10 @@ import './App.css';
 
 // import components
 import PersonalProfile from './components/PersonalProfile';
-import Projects from './components/Projects';
-import NavBar from './components/NavBar';
+import Projects from './components/Projects.js';
+import NavBar from './components/NavBar.js';
 import About from './components/About.js';
+import Tools from './components/Tools.js';
 
 function App() {
   // To do: add clickable links to sections of page
@@ -23,6 +24,7 @@ function App() {
       <PersonalProfile />
       <About />
       <Projects />
+      <Tools />
     </div>
   );
 }

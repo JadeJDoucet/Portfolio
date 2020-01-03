@@ -21,7 +21,7 @@ export default function About({ mobile }) {
         I'm proficient in full stack development, whether it's designing a front-end or back-end, dealing with APIs, deploying, or constructing databases with SQL or NoSQL.
         For any questions, feel free to contact me via <a href="mailto:jadejdoucet@gmail.com">email</a>.
       </Typography>
-      <Grid container spacing={2}>
+      {/* <Grid container spacing={2}>
         <Grid item xs={12} style={{ paddingTop: '3%' }}>
           <Typography variant="h5">My Tools </Typography>
         </Grid>
@@ -65,7 +65,7 @@ export default function About({ mobile }) {
             </ListItem>
           </List>
         </Grid>
-      </Grid>
+      </Grid> */}
     </section>
   )
 }
