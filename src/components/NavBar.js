@@ -9,16 +9,25 @@ function handleClick(event) {
 }
 
 export default function NavBar() {
+  // <Typography color="textPrimary">jadejdoucet.dev</Typography>
+  const styles = {
+    bar: {
+      paddingLeft: '1%',
+      alignText: 'right',
+    },
+  };
+
+  const { bar } = styles;
+
   return (
-    <Breadcrumbs aria-label="breadcrumb">
-      <Typography color="textPrimary">jadejdoucet.dev</Typography>
-      <Link color="inherit" href="#about" onClick={handleClick}>
+    <Breadcrumbs aria-label="breadcrumb" style={bar}>
+      <Link color="textPrimary" href="#about" onClick={handleClick}>
         About
       </Link>
       <Link color="inherit" href="#projects" onClick={handleClick}>
         Projects
       </Link>
-      <Link color="inherit" href="#" component="PersonalProfile"onClick={handleClick}>
+      <Link color="inherit" href="#" onClick={handleClick}>
         Contact
       </Link>
     </Breadcrumbs>
@@ -35,7 +44,7 @@ export default function NavBar() {
   //     width: '100%',
   //     display: 'inline-block',
   //     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-  //     position: 'absolute',
+  //     // position: 'absolute',
   //   },
   //   logo: {
   //     marginTop: '0.5%',
@@ -45,10 +54,10 @@ export default function NavBar() {
 
   // const { navWrapper, logo, navStartBox } = styles;
   // return (
-  //   <div style={navStartBox}>
-  //     <div style={navWrapper}>
+  //   <div style={navWrapper}>
+  //     <div style={navStartBox}>
+  //     </div>
   //       <h5 style={logo}>jadejdoucet.dev</h5>
   //     </div>
-  //   </div>
   // );
 }
