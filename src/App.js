@@ -3,7 +3,7 @@ import './App.css';
 
 // import components
 import PersonalProfile from './components/PersonalProfile';
-// import ProjectList from './components/ProjectList';
+import Projects from './components/Projects';
 import NavBar from './components/NavBar';
 import About from './components/About.js';
 
@@ -19,9 +19,10 @@ function App() {
 
   return (
     <div style={appWrapper}>
-    <NavBar />
-    <PersonalProfile />
-    <About />
+      <NavBar />
+      <PersonalProfile />
+      <About />
+      <Projects />
     </div>
   );
 }

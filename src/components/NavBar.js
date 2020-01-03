@@ -8,7 +8,6 @@ export default function NavBar() {
       padding: '0.5%',
       paddingLeft: '1%',
       alignText: 'right',
-      // position: 'sticky'
     },
   };
 
