@@ -23,13 +23,13 @@ export default function NavBar() {
 
   return (
     <Breadcrumbs aria-label="breadcrumb" style={bar}>
-      <Link color="textPrimary" href="#about" onClick={() => handleClick('about')}>
+      <Link color="textPrimary" href="#about">
         About
       </Link>
-      <Link color="inherit" href="#projects" onClick={() => handleClick('projects')}>
+      <Link color="inherit" onClick={() => handleClick('#about')}>
         Projects
       </Link>
-      <Link color="inherit" href="#" onClick={() => handleClick('contact')}>
+      <Link color="inherit" onClick={() => handleClick('#contact')}>
         Contact
       </Link>
     </Breadcrumbs>
