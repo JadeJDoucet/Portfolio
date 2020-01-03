@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, List, ListItem, ListItemText } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 export default function About({ mobile }) {
   const styles = {
