@@ -1,20 +1,20 @@
-import React from 'react';
-import { Grid } from 'semantic-ui-react'
+// import React from 'react';
+// import { Grid } from 'semantic-ui-react'
 
-// import components
-import ProjectListItem from './ProjectListItem';
+// // import components
+// import ProjectListItem from './ProjectListItem';
 
-// import projects
-import projects from '../project-data/projects';
+// // import projects
+// import projects from '../project-data/projects';
 
-export default function ProjectList({ mobile }) {
+// export default function ProjectList({ mobile }) {
 
-  return (
-    <Grid style={{ padding: 15}}>
-      {projects.map((project, i) => (
-      <ProjectListItem key={i} project={project} mobile={mobile} />
-        )
-      )}
-    </Grid>
-  );
-};
+//   return (
+//     <Grid style={{ padding: 15}}>
+//       {projects.map((project, i) => (
+//       <ProjectListItem key={i} project={project} mobile={mobile} />
+//         )
+//       )}
+//     </Grid>
+//   );
+// };

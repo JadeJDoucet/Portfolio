@@ -1,21 +1,12 @@
 import React from 'react';
 
 export default function PersonalProfile({ mobile }) {
-  // const fixedProfileStyle = {
-  //   position: mobile ? null : 'fixed',
-  //   margin: mobile? 'auto' : null,
-  //   backgroundColor: 'rgba(255, 255, 255, 0.90)',
-  //   border: '1px solid #ddd',
-  //   boxShadow: '0px 1px 2px #fff',
-  // }
-  
   const styles = {
     image: {
       margin: 'auto',
     },
     intro: {
-      flex: 1,
-      alignContent: 'center',
+      alignSelf: 'center',
     },
   }
 const { image, intro } = styles;
