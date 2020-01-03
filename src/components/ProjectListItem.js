@@ -45,7 +45,7 @@ export default function ProjectListItem({ project, mobile }) {
       </Grid.Column>
       <Grid.Column width={13}>
         <a href={url} target="_blank" rel="noopener noreferrer">
-          <h1 style={{ color: '#058E3F' }}>{name}</h1>
+          <h1 style={{ color: '#058E3F', fontFamily: 'Yanone Kaffeesatz' }}>{name}</h1>
         </a>
         <p>{description}</p>
           {images.length ? 

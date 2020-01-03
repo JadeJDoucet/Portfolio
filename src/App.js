@@ -50,6 +50,8 @@ function App() {
             <PersonalProfile />
           </Grid.Column>
           <Grid.Column width={13} style={listCol}>
+            <h1 style={{ textAlign: 'center', fontFamily: 'Yanone Kaffeesatz', color: '#058E3F', textShadow: '1px 0px 1px grey' }}>My Projects</h1>
+            <p style={{ textAlign: 'center', color: 'grey', marginTop: -5 }}>click a project to view the repo</p>
             <ProjectList />
           </Grid.Column>
         </Grid>
