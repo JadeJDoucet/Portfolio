@@ -5,9 +5,9 @@ export default function PersonalProfile({ mobile }) {
   const fixedProfileStyle = {
     position: mobile ? null : 'fixed',
     margin: mobile? 'auto' : null,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(255, 255, 255, 0.90)',
     border: '1px solid #ddd',
-    boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+    boxShadow: '0px 1px 2px #fff',
   }
 
   return (

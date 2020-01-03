@@ -50,8 +50,7 @@ function App() {
             <PersonalProfile />
           </Grid.Column>
           <Grid.Column width={13} style={listCol}>
-            <h1 style={{ textAlign: 'center', fontFamily: 'Yanone Kaffeesatz', color: '#058E3F', textShadow: '1px 0px 1px grey' }}>My Projects</h1>
-            <p style={{ textAlign: 'center', color: 'grey', marginTop: -5 }}>click a project to view the repo</p>
+            <h1 style={{ textAlign: 'center', fontFamily: 'Work Sans', color: '#fff', textShadow: '1px 0px 1px black' }}>My Projects</h1>
             <ProjectList />
           </Grid.Column>
         </Grid>
@@ -69,7 +68,7 @@ const toRender = () => {
 }
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'rgb(51, 51, 51)' }}>
       {toRender()}
     </div>
   );

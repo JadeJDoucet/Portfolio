@@ -37,17 +37,14 @@ export default function ProjectListItem({ project, mobile }) {
   };
 
   return (
-    <Grid.Row style={{ boxShadow: '0px 1px 5px grey', borderRadius: 5, marginBottom: 5, backgroundColor: 'rgba(255, 255, 255, 0.87)'}}>
+    <Grid.Row style={{ boxShadow: '0px 1px 5px grey', borderRadius: 5, marginBottom: 5, backgroundColor: 'rgba(255, 255, 255, 0.60)'}}>
       <Grid.Column width={3}>
-        <a href={url} target="_blank" rel="noopener noreferrer">
           <Image src={coverImage} rounded size={'large'}/>
-        </a>
       </Grid.Column>
       <Grid.Column width={13}>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          <h1 style={{ color: '#058E3F', fontFamily: 'Yanone Kaffeesatz' }}>{name}</h1>
-        </a>
+          <h1 style={{ color: '#fff', fontFamily: 'Yanone Kaffeesatz', textShadow: '1px 1px 8px black' }}>{name}</h1>
         <p>{description}</p>
+        <a href={url} target="_blank" rel="noopener noreferrer">View the Repo</a>
           {images.length ? 
               <ul style={hzList}>
             {images.map((img, i) => {

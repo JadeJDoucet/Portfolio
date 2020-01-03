@@ -5,8 +5,8 @@ export default function NavBar({ mobile, setContact }) {
   const [activeItem, setActiveItem] = useState('');
 
   const fixedMenuStyle = {
-    backgroundColor: '#058E3F',
-    border: '1px solid #ddd',
+    backgroundColor: 'rgb(64, 64, 64)',
+    // border: '1px solid rbga(0, 0, 0, 60)',
     boxShadow: '0px 4px 5px rgba(0, 0, 0, 0.2)',
     borderRadius: 5,
   };
