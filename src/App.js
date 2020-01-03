@@ -7,8 +7,17 @@ import PersonalProfile from './components/PersonalProfile';
 import NavBar from './components/NavBar';
 
 function App() {
+  // To do: add clickable links to sections of page
+  const styles = {
+    appWrapper: {
+      display: 'inline',
+    },
+  };
+
+  const { appWrapper } = styles;
+
   return (
-    <div>
+    <div style={appWrapper}>
     <NavBar />
     <PersonalProfile />
     </div>
