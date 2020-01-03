@@ -6,9 +6,6 @@ export default function PersonalProfile({ mobile }) {
     introWrapper: {
       backgroundColor: 'rgb(51, 51, 51)',
       textAlign: 'center',
-      display: 'inline-block',
-      // boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-      // marginTop: '2.5%'
       paddingTop: '3%',
       paddingBottom: '3%'
     },
@@ -29,8 +26,8 @@ const { image, introWrapper } = styles;
       alt="profile"
       style={image}
       />
-      <Typography variant="h2">Jade Doucet</Typography>
-      <Typography variant="subtitle1">Software Engineer</Typography>
+      <Typography variant="h2" style={{ color: 'lightgrey' }}>Jade Doucet</Typography>
+      <Typography variant="subtitle1" style={{ color: 'lightgrey' }}>Software Engineer</Typography>
     </section>
   )
 }

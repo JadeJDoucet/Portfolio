@@ -3,17 +3,19 @@ import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info('You clicked a breadcrumb.');
+function handleClick(loc) {
+  /* switch this for deployment */
+  window.location = 'jadejdoucet.dev' + loc;
+  // window.location = 'localhost:3000' + loc;
 }
 
 export default function NavBar() {
-  // <Typography color="textPrimary">jadejdoucet.dev</Typography>
   const styles = {
     bar: {
+      padding: '0.5%',
       paddingLeft: '1%',
       alignText: 'right',
+      position: 'sticky'
     },
   };
 
@@ -21,13 +23,13 @@ export default function NavBar() {
 
   return (
     <Breadcrumbs aria-label="breadcrumb" style={bar}>
-      <Link color="textPrimary" href="#about" onClick={handleClick}>
+      <Link color="textPrimary" href="#about" onClick={() => handleClick('about')}>
         About
       </Link>
-      <Link color="inherit" href="#projects" onClick={handleClick}>
+      <Link color="inherit" href="#projects" onClick={() => handleClick('projects')}>
         Projects
       </Link>
-      <Link color="inherit" href="#" onClick={handleClick}>
+      <Link color="inherit" href="#" onClick={() => handleClick('contact')}>
         Contact
       </Link>
     </Breadcrumbs>
