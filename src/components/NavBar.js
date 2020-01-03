@@ -1,51 +1,65 @@
 import React, { useState } from 'react';
-import { Menu, Dropdown } from 'semantic-ui-react';
+import Typography from '@material-ui/core/Typography';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Link from '@material-ui/core/Link';
 
-export default function NavBar({ mobile, setContact }) {
-  const [activeItem, setActiveItem] = useState('');
+function handleClick(loc) {
+  /* switch this for deployment */
+  window.location = 'jadejdoucet.dev' + loc;
+  // window.location = 'localhost:3000' + loc;
+}
 
-  const fixedMenuStyle = {
-    backgroundColor: '#058E3F',
-    border: '1px solid #ddd',
-    boxShadow: '0px 4px 5px rgba(0, 0, 0, 0.2)',
-    borderRadius: 5,
+export default function NavBar() {
+  const styles = {
+    bar: {
+      padding: '0.5%',
+      paddingLeft: '1%',
+      alignText: 'right',
+      position: 'sticky'
+    },
   };
-  const toRender = () => {
-    if (mobile) {
-      return (
-        <Menu
-          borderless
-          className="ui top fixed menu header"
-          stackable
-          style={fixedMenuStyle}
-        >
-          <Dropdown item icon='bars' /*removed 'simple' here*/>
-              <Dropdown.Menu>
-              <Dropdown.Item style={{ color: '#fff' }}>Email</Dropdown.Item>
-              </Dropdown.Menu>
-          </Dropdown>
-        </Menu>
-      )
-    } else {
-      return (
-        <Menu
-        borderless
-        className="ui top fixed menu header"
-        stackable
-        style={fixedMenuStyle}
-        onClick={() => setActiveItem('')}
-        >
-          <Menu.Item
-            style={{ color: '#fff' }}
-            className="right item"
-            active={activeItem === 'contact'}
-            onClick={() => {setActiveItem('contact'); window.location.href="mailto:'jadejdoucet@gmail.com';"}}
-          >
-            Email
-          </Menu.Item>
-        </Menu>
-      )
-    }
-  }
-return toRender();
+
+  const { bar } = styles;
+
+  return (
+    <Breadcrumbs aria-label="breadcrumb" style={bar}>
+      <Link color="textPrimary" href="#about" onClick={() => handleClick('about')}>
+        About
+      </Link>
+      <Link color="inherit" href="#projects" onClick={() => handleClick('projects')}>
+        Projects
+      </Link>
+      <Link color="inherit" href="#" onClick={() => handleClick('contact')}>
+        Contact
+      </Link>
+    </Breadcrumbs>
+  )
+
+  // const styles = {
+  //   navStartBox: {
+  //     backgroundColor: '#fff',
+  //     padding: 'auto',
+  //     display: 'inline'
+  //   },
+  //   navWrapper: {
+  //     height: '2em',
+  //     width: '100%',
+  //     display: 'inline-block',
+  //     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+  //     // position: 'absolute',
+  //   },
+  //   logo: {
+  //     marginTop: '0.5%',
+  //     marginLeft: '1%'
+  //   },
+  // };
+
+  // const { navWrapper, logo, navStartBox } = styles;
+  // return (
+  //   <div style={navWrapper}>
+  //     <div style={navStartBox}>
+  //     </div>
+  //       <h5 style={logo}>jadejdoucet.dev</h5>
+  //     </div>
+  // );
 }
