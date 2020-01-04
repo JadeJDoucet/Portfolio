@@ -1,6 +1,9 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 
+// import components
+import ScannAR from './ScannAR';
+
 export default function Projects() {
   const styles = {
     container: {
@@ -18,6 +21,7 @@ export default function Projects() {
   return (
     <div id="projects" style={container}>
       <Typography variant="h4" style={text}>Recent Projects</Typography>
+      <ScannAR />
     </div>
   );
 };
