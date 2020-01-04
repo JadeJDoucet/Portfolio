@@ -1,7 +1,8 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography, Slide } from '@material-ui/core';
 
 export default function PersonalProfile({ mobile }) {
+  //To do: Use Slide for transition on photo
   const styles = {
     introWrapper: {
       backgroundColor: 'rgb(51, 51, 51)',
@@ -14,11 +15,13 @@ export default function PersonalProfile({ mobile }) {
       marginLeft: 'auto',
       marginRight: 'auto',
       marginTop: 3,
-      width: '23%',
+      width: window.innerWidth > 1000 ? '23%' : '30%',
       borderRadius: '50%',
     }
   }
+
 const { image, introWrapper } = styles;
+
   return (
     <section id="intro" style={introWrapper}>
       <img
