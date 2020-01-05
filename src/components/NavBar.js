@@ -9,24 +9,32 @@ export default function NavBar() {
       paddingLeft: '1%',
       alignText: 'right',
     },
+    barWrapper: {
+      position: 'sticky',
+      zIndex: 100,
+      top: 0,
+      backgroundColor: '#fff'
+    }
   };
 
-  const { bar } = styles;
+  const { bar, barWrapper } = styles;
 
   return (
-    <Breadcrumbs aria-label="breadcrumb" style={bar}>
-      <Link color="textPrimary" href="#about">
-        About
-      </Link>
-      <Link color="inherit" href="#projects">
-        Projects
-      </Link>
-      <Link color="inherit" href="#tools">
-        Skills
-      </Link>
-      <Link color="inherit" href="#contact">
-        Contact
-      </Link>
-    </Breadcrumbs>
+    <header style={barWrapper}>
+      <Breadcrumbs aria-label="breadcrumb" style={bar}>
+        <Link color="textPrimary" href="#about">
+          About
+        </Link>
+        <Link color="inherit" href="#projects">
+          Projects
+        </Link>
+        <Link color="inherit" href="#tools">
+          Skills
+        </Link>
+        <Link color="inherit" href="#contact">
+          Contact
+        </Link>
+      </Breadcrumbs>
+    </header>
   )
 }
