@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Typography, Paper } from '@material-ui/core';
 
+//import project data
 import projects from '../project-data/projects.js';
 
 const ScannarCustomer = projects[0];
@@ -9,8 +10,18 @@ const ScannarBusiness = projects[1];
 export default function ScannAR() {
   const styles = {
     image: {
-      width: '25%',
+      width: '27%',
       borderRadius: 5,
+    },
+    iphone: {
+      display: 'flex',
+      width: '19%',
+      position: 'absolute',
+      right: '16.61%',
+      top: '131%'
+    },
+    noShow: {
+      display: 'none'
     },
     gridWrapper: {
       justifyContent: 'center',
@@ -25,7 +36,7 @@ export default function ScannAR() {
     },
   };
   
-  const { image, gridWrapper, paperWrapper } = styles;
+  const { image, gridWrapper, paperWrapper, iphone, noShow } = styles;
 
   return (
   <Grid container spacing={2} style={gridWrapper}>
@@ -40,6 +51,7 @@ export default function ScannAR() {
     </Paper>
       </Grid>
       <Grid item xs={6}>
+        <img src={require('../project-data/iphone.png')} alt="iphone" style={window.innerWidth > 1000 ? iphone : noShow}></img>
         <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
       </Grid>
   </Grid>
