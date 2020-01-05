@@ -18,7 +18,7 @@ export default function ScannAR() {
       width: '19%',
       position: 'absolute',
       right: '16.61%',
-      top: '124.5%'
+      top: '120%'
     },
     noShow: {
       display: 'none'
@@ -48,6 +48,7 @@ export default function ScannAR() {
       <Typography variant="h5">ScannAR</Typography>
       <Paper style={paperWrapper}>
       <Typography variant="body2">
+        {/*To do: add justify contwent center */}
         ScannAR helps your business create an <b>augmented reality</b> shopping experience for your customers.
         ScannAR has two separate applications, one of which is for businesses, which allows for easy to access inventory management. 
         The other application allows those customers to view items being sold through their camera, as well as manage their own "saved for later" items.
