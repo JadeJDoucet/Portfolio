@@ -32,7 +32,11 @@ export default function ScannAR() {
       flexWrap: 'wrap-reverse'
     },
     paperWrapper: {
-      paddingTop: '2%'
+      paddingTop: '2%',
+      marginTop: '2%',
+      width: '75%',
+      textAlign: 'justify',
+      boxShadow: 'none'
     },
   };
   
