@@ -56,8 +56,10 @@ export default function ScannAR() {
       <Typography variant="body1">View on <a href={ScannarCustomer.url}>GitHub</a></Typography>
     </Grid>
     <Grid item xs={6}>
-      <img src={require('../project-data/iphone.png')} alt="iphone" style={window.innerWidth > 1000 ? iphone : noShow}></img>
-      <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
+      <div>
+        <img src={require('../project-data/iphone.png')} alt="iphone" style={window.innerWidth > 1000 ? iphone : noShow}></img>
+        <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
+      </div>
     </Grid>
   </Grid>
   )
