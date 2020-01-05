@@ -18,7 +18,7 @@ export default function ScannAR() {
       width: '19%',
       position: 'absolute',
       right: '16.61%',
-      top: '125%'
+      top: '124.5%'
     },
     noShow: {
       display: 'none'
