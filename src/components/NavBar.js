@@ -13,7 +13,8 @@ export default function NavBar() {
       position: 'sticky',
       zIndex: 100,
       top: 0,
-      backgroundColor: '#fff'
+      // backgroundColor: '#fff'
+      backgroundColor: 'rgba(255, 255, 255, 0.97)'
     }
   };
 
