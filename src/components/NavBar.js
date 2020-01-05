@@ -32,7 +32,7 @@ export default function NavBar() {
         <Link color="inherit" href="#tools">
           Skills
         </Link>
-        <Link color="inherit" href="#contact">
+        <Link color="inherit" href="mailto:jadejdoucet@gmail.com">
           Contact
         </Link>
       </Breadcrumbs>

@@ -22,6 +22,7 @@ function App() {
   return (
     <div style={appWrapper}>
       <NavBar />
+      <h3 style={{ position: 'absolute', color: '#fff' }}>This is currently under construction</h3>
       <PersonalProfile />
       <About />
       <Projects />
