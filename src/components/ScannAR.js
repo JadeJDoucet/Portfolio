@@ -18,7 +18,7 @@ export default function ScannAR() {
       width: '19%',
       position: 'absolute',
       right: '16.61%',
-      top: '131%'
+      top: '125%'
     },
     noShow: {
       display: 'none'
@@ -44,7 +44,7 @@ export default function ScannAR() {
 
   return (
   <Grid container spacing={2} style={gridWrapper}>
-      <Grid item xs={12} lg={6}>
+    <Grid item xs={12} lg={6}>
       <Typography variant="h5">ScannAR</Typography>
       <Paper style={paperWrapper}>
       <Typography variant="body2">
@@ -52,12 +52,13 @@ export default function ScannAR() {
         ScannAR has two separate applications, one of which is for businesses, which allows for easy to access inventory management. 
         The other application allows those customers to view items being sold through their camera, as well as manage their own "saved for later" items.
       </Typography>
-    </Paper>
-      </Grid>
-      <Grid item xs={6}>
-        <img src={require('../project-data/iphone.png')} alt="iphone" style={window.innerWidth > 1000 ? iphone : noShow}></img>
-        <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
-      </Grid>
+      </Paper>
+      <Typography variant="body1">View on <a href={ScannarCustomer.url}>GitHub</a></Typography>
+    </Grid>
+    <Grid item xs={6}>
+      <img src={require('../project-data/iphone.png')} alt="iphone" style={window.innerWidth > 1000 ? iphone : noShow}></img>
+      <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
+    </Grid>
   </Grid>
   )
 }

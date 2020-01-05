@@ -7,6 +7,7 @@ import Projects from './components/Projects.js';
 import NavBar from './components/NavBar.js';
 import About from './components/About.js';
 import Tools from './components/Tools.js';
+import Contact from './components/Contact.js';
 
 function App() {
   // To do: add clickable links to sections of page
