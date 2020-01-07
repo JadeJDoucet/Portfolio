@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.3d633490.chunk.css",
-    "main.js": "/static/js/main.a1571b51.chunk.js",
-    "main.js.map": "/static/js/main.a1571b51.chunk.js.map",
+    "main.js": "/static/js/main.f674538e.chunk.js",
+    "main.js.map": "/static/js/main.f674538e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.712fe5d1.js",
     "runtime-main.js.map": "/static/js/runtime-main.712fe5d1.js.map",
     "static/css/2.3c1ddb0a.chunk.css": "/static/css/2.3c1ddb0a.chunk.css",
-    "static/js/2.43a97ba3.chunk.js": "/static/js/2.43a97ba3.chunk.js",
-    "static/js/2.43a97ba3.chunk.js.map": "/static/js/2.43a97ba3.chunk.js.map",
+    "static/js/2.34a616e1.chunk.js": "/static/js/2.34a616e1.chunk.js",
+    "static/js/2.34a616e1.chunk.js.map": "/static/js/2.34a616e1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.74d4896ab2146a242a150b433c270c92.js": "/precache-manifest.74d4896ab2146a242a150b433c270c92.js",
+    "precache-manifest.1d4f831b87cec2f7455f707ac3d895da.js": "/precache-manifest.1d4f831b87cec2f7455f707ac3d895da.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3c1ddb0a.chunk.css.map": "/static/css/2.3c1ddb0a.chunk.css.map",
     "static/css/main.3d633490.chunk.css.map": "/static/css/main.3d633490.chunk.css.map",
-    "static/js/2.43a97ba3.chunk.js.LICENSE": "/static/js/2.43a97ba3.chunk.js.LICENSE",
+    "static/js/2.34a616e1.chunk.js.LICENSE": "/static/js/2.34a616e1.chunk.js.LICENSE",
     "static/media/adopt-home.jpg": "/static/media/adopt-home.e8cdf96e.jpg",
     "static/media/adopt-map.jpg": "/static/media/adopt-map.f71d196b.jpg",
     "static/media/adopt-report.jpg": "/static/media/adopt-report.8d3c1907.jpg",
@@ -21,7 +21,7 @@
     "static/media/readr-login.png": "/static/media/readr-login.24ec0411.png",
     "static/media/readr-reader.png": "/static/media/readr-reader.822f4a51.png",
     "static/media/readr-saved.png": "/static/media/readr-saved.64af019e.png",
-    "static/media/readr-suggestion.png": "/static/media/readr-suggestion.2eabf88d.png",
+    "static/media/readr-suggestion.png": "/static/media/readr-suggestion.6c1aace0.png",
     "static/media/scannar-ar.png": "/static/media/scannar-ar.5f3f9d7b.png",
     "static/media/scannar-business-create.png": "/static/media/scannar-business-create.b14a9f7c.png",
     "static/media/scannar-business-login.png": "/static/media/scannar-business-login.6b3954dc.png",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.712fe5d1.js",
     "static/css/2.3c1ddb0a.chunk.css",
-    "static/js/2.43a97ba3.chunk.js",
+    "static/js/2.34a616e1.chunk.js",
     "static/css/main.3d633490.chunk.css",
-    "static/js/main.a1571b51.chunk.js"
+    "static/js/main.f674538e.chunk.js"
   ]
 }
