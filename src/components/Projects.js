@@ -2,8 +2,9 @@ import React from 'react';
 import { Typography } from '@material-ui/core';
 
 // import components
-import ScannAR from './ScannAR';
+import ScannAR from './ScannAR.js';
 import ReaderProject from './Readr.js';
+import AdoptAPothole from './AdoptAPothole.js';
 
 export default function Projects() {
   const styles = {
@@ -24,6 +25,7 @@ export default function Projects() {
       <Typography variant="h4" style={text}>Recent Projects</Typography>
       <ScannAR />
       <ReaderProject />
+      <AdoptAPothole />
     </div>
   );
 };
