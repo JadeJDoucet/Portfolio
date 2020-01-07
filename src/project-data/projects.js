@@ -34,7 +34,7 @@ const projects = [
   },
   {
     name: 'Adopt-A-Pothole',
-    description: 'Crowdfunding app to restore New Orleans streets',
+    description: 'This is a crowdfunding application meant to repair the streets of New Orleans. Users can view potholes in their area based on current location, as well as donate to them via PayPal. Users can also report new potholes, which will allow users to start donating to the repair of that pothole.',
     url: 'https://github.com/Adopt-A-Pothole/adopt-a-pothole',
     coverImage: require('./project-photos/adopt-a-pothole-ss/adopt-home.jpg'),
     images: [
