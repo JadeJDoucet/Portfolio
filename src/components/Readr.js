@@ -36,6 +36,7 @@ export default function ReadrProject() {
       borderRadius: 5,
       boxShadow: '0px 0px 5px black',
       flexWrap: 'wrap-reverse',
+      marginBottom: '0.5%'
     },
     carouselItem: {
       backgroundColor: 'rgba(255, 255, 255, 0.75)',

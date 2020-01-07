@@ -10,7 +10,7 @@ export default function Projects() {
     container: {
       textAlign: 'center',
       backgroundColor:'rgb(51, 51, 51)',
-      padding: '3%'
+      padding: '1%',
     },
     text: {
       color: 'lightgrey'

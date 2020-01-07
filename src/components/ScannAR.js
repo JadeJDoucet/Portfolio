@@ -36,6 +36,7 @@ export default function ScannAR() {
       borderRadius: 5,
       boxShadow: '0px 0px 5px black',
       flexWrap: 'wrap-reverse',
+      marginBottom: '0.5%'
     },
     paperWrapper: {
       paddingTop: '2%',
