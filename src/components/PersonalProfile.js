@@ -23,7 +23,7 @@ export default function PersonalProfile({ mobile }) {
 const { image, introWrapper } = styles;
 
   return (
-    <section id="intro" style={introWrapper}>
+    <div id="intro" style={introWrapper}>
       <img
       src={require("../project-data/headshots/headshot-close.jpg")}
       alt="profile"
@@ -31,6 +31,6 @@ const { image, introWrapper } = styles;
       />
       <Typography variant="h2" style={{ color: 'lightgrey' }}>Jade Doucet</Typography>
       <Typography variant="subtitle1" style={{ color: 'lightgrey' }}>Software Engineer</Typography>
-    </section>
+    </div>
   )
 }
