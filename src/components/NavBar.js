@@ -11,7 +11,7 @@ export default function NavBar() {
     },
     barWrapper: {
       position: 'sticky',
-      zIndex: 100,
+      zIndex: 1000,
       top: 0,
       // backgroundColor: '#fff'
       backgroundColor: 'rgba(255, 255, 255, 0.97)'
