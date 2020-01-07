@@ -48,7 +48,7 @@ export default function ReadrProject() {
   <Grid container spacing={2} style={gridWrapper}>
     <Grid container style={{ justifyContent: 'center' }}>
       <Grid item xs={12}>
-        <Typography variant="body2" style={{ textAlign: 'justify', padding: '2%', paddingLeft: '20%', paddingRight: '20%' }}>
+        <Typography variant="body1" style={{ textAlign: 'justify', padding: '2%', paddingLeft: '20%', paddingRight: '20%' }}>
           Readr is a reading suggestion application which also offers an in-browser reading experience for open source books.
           Our books are sourced from Open library, and Readr has a custom algorithm for book reccomendations based users swiping left or right on books they like or dislike.
         </Typography>
