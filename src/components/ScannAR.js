@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography, Paper } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -10,7 +10,7 @@ const ScannarCustomer = projects[0];
 const ScannarBusiness = projects[1];
 
 export default function ScannAR() {
-  const styles = {
+  const style = {
     image: {
       width: '27%',
       borderRadius: 5,
@@ -49,7 +49,7 @@ export default function ScannAR() {
     },
   };
   
-  const { image, gridWrapper, paperWrapper, iphone, noShow, carouselItem } = styles;
+  const { image, gridWrapper, carouselItem } = style;
 
   return (
   <Grid container spacing={2} style={gridWrapper}>
