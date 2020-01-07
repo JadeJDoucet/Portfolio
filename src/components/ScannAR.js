@@ -48,30 +48,24 @@ export default function ScannAR() {
       backgroundColor: 'rgba(160, 160, 160, 0.5)',
     },
   };
-    /*
-      <div>
-        <img src={require('../project-data/iphone.png')} alt="iphone" style={window.innerWidth > 1000 ? iphone : noShow}></img>
-        <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
-      </div>
-    */
   
   const { image, gridWrapper, paperWrapper, iphone, noShow, carouselItem } = styles;
 
   return (
   <Grid container spacing={2} style={gridWrapper}>
     <Grid container xs={12} lg={6} style={{ justifyContent: 'center' }}>
-      <Typography variant="h5" style={{ justify: 'center' }}>ScannAR</Typography>
-      <Paper style={paperWrapper}>
-      <Typography variant="body2">
-        {/*To do: add justify content center */}
-        ScannAR helps your business create an <b>augmented reality</b> shopping experience for your customers.
-        ScannAR has two separate applications, one of which is for businesses, which allows for easy to access inventory management. 
-        The other application allows those customers to view items being sold through their camera, as well as manage their own "saved for later" items.
-      </Typography>
-      </Paper>
-      <Typography variant="body1">View on <a href={ScannarCustomer.url}>GitHub</a></Typography>
+      <Grid item xs={12}>
+        <Typography variant="h5" style={{ textAlign: 'center', padding: '1%' }}>ScannAR</Typography>
+        <Typography variant="body2" style={{ textAlign: 'justify', padding: '2%' }}>
+          ScannAR helps your business create an <b>augmented reality</b> shopping experience for your customers.
+          ScannAR has two separate applications, one of which is for businesses, which allows for easy to access inventory management. 
+          The other application allows those customers to view items being sold through their camera, as well as manage their own "saved for later" items.
+        </Typography>
+        <Typography variant="body1" style={{ paddingTop: '1%' }}>View on <a href={ScannarCustomer.url}>GitHub</a></Typography>
+      </Grid>
     </Grid>
     <Grid container xs={6} style={{ justifyContent: 'center' }}>
+      <img src={require('../project-data/iphone.png')} alt="iphone" style={window.innerWidth > 1000 ? iphone : noShow}></img>
       <Carousel
         swipeable
         dynamicHeight
