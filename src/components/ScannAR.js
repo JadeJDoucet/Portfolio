@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Typography, Paper } from '@material-ui/core';
-import Carousel from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 //import project data
 import projects from '../project-data/projects.js';
@@ -43,6 +44,9 @@ export default function ScannAR() {
       textAlign: 'justify',
       boxShadow: 'none', // override paper shadow
     },
+    carouselItem: {
+      backgroundColor: 'rgba(160, 160, 160, 0.5)',
+    },
   };
     /*
       <div>
@@ -51,7 +55,7 @@ export default function ScannAR() {
       </div>
     */
   
-  const { image, gridWrapper, paperWrapper, iphone, noShow } = styles;
+  const { image, gridWrapper, paperWrapper, iphone, noShow, carouselItem } = styles;
 
   return (
   <Grid container spacing={2} style={gridWrapper}>
@@ -67,8 +71,23 @@ export default function ScannAR() {
       </Paper>
       <Typography variant="body1">View on <a href={ScannarCustomer.url}>GitHub</a></Typography>
     </Grid>
-    <Grid container xs={6}>
-      
+    <Grid container xs={6} style={{ justifyContent: 'center' }}>
+      <Carousel
+        swipeable
+        dynamicHeight
+        style={{ backgroundColor: '#fff' }}
+      >
+          <div style={carouselItem}>
+            <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
+            <p className="legend">ScannAR Customer</p>
+          </div>
+          {ScannarCustomer.images.map((imgSource)=>(
+            <div style={carouselItem}>
+              <img src={imgSource} alt="screenshot" style={image}></img>
+              <p className="text">ScannAR Customer</p>
+            </div>
+          ))}
+      </Carousel>
     </Grid>
   </Grid>
   )
