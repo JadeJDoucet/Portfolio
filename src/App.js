@@ -13,7 +13,7 @@ function App() {
   const styles = {
     appWrapper: {
       display: 'inline',
-      overflowX: 'hidden'
+      // overflowX: 'hidden'
     },
   };
 

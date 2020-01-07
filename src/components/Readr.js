@@ -6,13 +6,13 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 //import project data
 import projects from '../project-data/projects.js';
 
-const ScannarCustomer = projects[0];
-const ScannarBusiness = projects[1];
+const Readr = projects[2];
+// const ScannarBusiness = projects[1];
 
-export default function ScannAR() {
+export default function ReadrProject() {
   const style = {
     image: {
-      width: '27%',
+      width: '93.5%',
       borderRadius: 5,
       position: 'static',
       right: '16.61%',
@@ -38,13 +38,6 @@ export default function ScannAR() {
       flexWrap: 'wrap-reverse',
       marginBottom: '0.5%'
     },
-    paperWrapper: {
-      paddingTop: '2%',
-      marginTop: '2%',
-      width: '75%',
-      textAlign: 'justify',
-      boxShadow: 'none', // override paper shadow
-    },
     carouselItem: {
       backgroundColor: 'rgba(255, 255, 255, 0.75)',
     },
@@ -56,18 +49,16 @@ export default function ScannAR() {
   <Grid container spacing={2} style={gridWrapper}>
     <Grid container style={{ justifyContent: 'center' }}>
       <Grid item xs={12}>
-        {/* <Typography variant="h5" style={{ textAlign: 'center', padding: '1%' }}>ScannAR</Typography> */}
         <Typography variant="body1" style={{ textAlign: 'justify', padding: '2%', paddingLeft: '20%', paddingRight: '20%' }}>
-          ScannAR helps your business create an <b>augmented reality</b> shopping experience for your customers.
-          ScannAR has two separate applications, one of which is for businesses, which allows for easy to access inventory management. 
-          The other application allows those customers to view items being sold through their camera, as well as manage their own "saved for later" items.
+          Readr is a reading suggestion application which also offers an in-browser reading experience for open source books.
+          Our books are sourced from Open library, and Readr has a custom algorithm for book reccomendations based users swiping left or right on books they like or dislike.
         </Typography>
-        <Typography variant="body1" style={{ paddingTop: '1%' }}>View on <a href={ScannarCustomer.url}>GitHub</a></Typography>
+        <Typography variant="body1" style={{ paddingTop: '1%' }}>View on <a href={Readr.url}>GitHub</a></Typography>
       </Grid>
     </Grid>
     <Grid container style={{ justifyContent: 'center' }}>
       <Grid item xs={12} lg={6} style={{ paddingTop: '1%' }}>
-        <Typography variant="h4" style={{ textAlign: 'center', padding: '1%' }}>ScannAR</Typography>
+        <Typography variant="h4" style={{ textAlign: 'center', padding: '1%' }}>Readr</Typography>
         <Carousel
           swipeable
           dynamicHeight
@@ -75,25 +66,16 @@ export default function ScannAR() {
           showStatus={false}
         >
             <div style={carouselItem}>
-              <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
-              <p className="legend">ScannAR Customer</p>
+              <img src={Readr.coverImage} alt="Project" style={image}></img>
+              <p className="legend">Readr Landing</p>
             </div>
-            {ScannarCustomer.images.map((imgSource, i)=>(
+            {Readr.images.map((imgSource, i)=>{
+              return (
               <div style={carouselItem} key={i}>
                 <img src={imgSource} alt="screenshot" style={image}></img>
-                <p className="scannar">ScannAR Customer</p>
               </div>
-            ))}
-            <div style={carouselItem}>
-              <img src={ScannarBusiness.coverImage} alt="Project" style={image}></img>
-              <p className="legend">ScannAR Business</p>
-            </div>
-            {ScannarBusiness.images.map((imgSource, i) => (
-              <div style={carouselItem} key={i}>
-                <img src={imgSource} alt="screenshot" style={image}></img>
-                <p className="scannar">ScannAR Business</p>
-              </div>
-            ))}
+              )
+            })}
         </Carousel>
       </Grid>
     </Grid>
