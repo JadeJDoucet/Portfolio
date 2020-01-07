@@ -45,7 +45,7 @@ export default function ScannAR() {
       boxShadow: 'none', // override paper shadow
     },
     carouselItem: {
-      backgroundColor: 'rgba(160, 160, 160, 0.5)',
+      backgroundColor: 'rgba(255, 255, 255, 0.75)',
     },
   };
   
@@ -53,10 +53,10 @@ export default function ScannAR() {
 
   return (
   <Grid container spacing={2} style={gridWrapper}>
-    <Grid container xs={12} lg={6} style={{ justifyContent: 'center' }}>
+    <Grid container style={{ justifyContent: 'center' }}>
       <Grid item xs={12}>
         <Typography variant="h5" style={{ textAlign: 'center', padding: '1%' }}>ScannAR</Typography>
-        <Typography variant="body2" style={{ textAlign: 'justify', padding: '2%' }}>
+        <Typography variant="body2" style={{ textAlign: 'justify', padding: '2%', paddingLeft: '15%', paddingRight: '15%' }}>
           ScannAR helps your business create an <b>augmented reality</b> shopping experience for your customers.
           ScannAR has two separate applications, one of which is for businesses, which allows for easy to access inventory management. 
           The other application allows those customers to view items being sold through their camera, as well as manage their own "saved for later" items.
@@ -64,24 +64,35 @@ export default function ScannAR() {
         <Typography variant="body1" style={{ paddingTop: '1%' }}>View on <a href={ScannarCustomer.url}>GitHub</a></Typography>
       </Grid>
     </Grid>
-    <Grid container xs={6} style={{ justifyContent: 'center' }}>
-      <img src={require('../project-data/iphone.png')} alt="iphone" style={window.innerWidth > 1000 ? iphone : noShow}></img>
-      <Carousel
-        swipeable
-        dynamicHeight
-        style={{ backgroundColor: '#fff' }}
-      >
-          <div style={carouselItem}>
-            <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
-            <p className="legend">ScannAR Customer</p>
-          </div>
-          {ScannarCustomer.images.map((imgSource)=>(
+    <Grid container style={{ justifyContent: 'center' }}>
+      <Grid item xs={12} lg={6} style={{ paddingTop: '1%' }}>
+        <Carousel
+          swipeable
+          dynamicHeight
+          showThumbs={false}
+        >
             <div style={carouselItem}>
-              <img src={imgSource} alt="screenshot" style={image}></img>
-              <p className="text">ScannAR Customer</p>
+              <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
+              <p className="legend">ScannAR Customer</p>
             </div>
-          ))}
-      </Carousel>
+            {ScannarCustomer.images.map((imgSource, i)=>(
+              <div style={carouselItem} key={i}>
+                <img src={imgSource} alt="screenshot" style={image}></img>
+                <p className="scannar">ScannAR Customer</p>
+              </div>
+            ))}
+            <div style={carouselItem}>
+              <img src={ScannarBusiness.coverImage} alt="Project" style={image}></img>
+              <p className="legend">ScannAR Business</p>
+            </div>
+            {ScannarBusiness.images.map((imgSource, i) => (
+              <div style={carouselItem} key={i}>
+                <img src={imgSource} alt="screenshot" style={image}></img>
+                <p className="scannar">ScannAR Business</p>
+              </div>
+            ))}
+        </Carousel>
+      </Grid>
     </Grid>
   </Grid>
   )
