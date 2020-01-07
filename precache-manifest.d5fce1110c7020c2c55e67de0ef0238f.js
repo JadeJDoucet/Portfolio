@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0788108f688cdedd6a18c162d88e5dba",
+    "revision": "b5c9d6e8368994ba5927553154b6badc",
     "url": "/index.html"
   },
   {
-    "revision": "bffc29976c709a026a61",
+    "revision": "86ddd820f77f3b814b54",
     "url": "/static/css/2.3c1ddb0a.chunk.css"
   },
   {
-    "revision": "e75655343c5b7b97108c",
+    "revision": "ac4736340e4890871c9e",
     "url": "/static/css/main.3d633490.chunk.css"
   },
   {
-    "revision": "bffc29976c709a026a61",
-    "url": "/static/js/2.0b3fa9ce.chunk.js"
+    "revision": "86ddd820f77f3b814b54",
+    "url": "/static/js/2.43a97ba3.chunk.js"
   },
   {
     "revision": "6d21534beb347a40226ca567c89690f8",
-    "url": "/static/js/2.0b3fa9ce.chunk.js.LICENSE"
+    "url": "/static/js/2.43a97ba3.chunk.js.LICENSE"
   },
   {
-    "revision": "e75655343c5b7b97108c",
-    "url": "/static/js/main.4a3fdf71.chunk.js"
+    "revision": "ac4736340e4890871c9e",
+    "url": "/static/js/main.cad8bf80.chunk.js"
   },
   {
     "revision": "b6d641d7babc028ccdf2",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1dda9e3da59f210c0cefe12b17bc7ad6",
     "url": "/static/media/headshot-close.1dda9e3d.jpg"
-  },
-  {
-    "revision": "2862cf2b746374cd2dc2f133262d8006",
-    "url": "/static/media/iphone.2862cf2b.png"
   },
   {
     "revision": "24ec04112ab7eea1ff9fa57ef4595810",
