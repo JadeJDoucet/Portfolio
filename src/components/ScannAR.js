@@ -55,8 +55,8 @@ export default function ScannAR() {
   <Grid container spacing={2} style={gridWrapper}>
     <Grid container style={{ justifyContent: 'center' }}>
       <Grid item xs={12}>
-        <Typography variant="h5" style={{ textAlign: 'center', padding: '1%' }}>ScannAR</Typography>
-        <Typography variant="body2" style={{ textAlign: 'justify', padding: '2%', paddingLeft: '15%', paddingRight: '15%' }}>
+        {/* <Typography variant="h5" style={{ textAlign: 'center', padding: '1%' }}>ScannAR</Typography> */}
+        <Typography variant="body2" style={{ textAlign: 'justify', padding: '2%', paddingLeft: '20%', paddingRight: '20%' }}>
           ScannAR helps your business create an <b>augmented reality</b> shopping experience for your customers.
           ScannAR has two separate applications, one of which is for businesses, which allows for easy to access inventory management. 
           The other application allows those customers to view items being sold through their camera, as well as manage their own "saved for later" items.
@@ -66,10 +66,12 @@ export default function ScannAR() {
     </Grid>
     <Grid container style={{ justifyContent: 'center' }}>
       <Grid item xs={12} lg={6} style={{ paddingTop: '1%' }}>
+        <Typography variant="h4" style={{ textAlign: 'center', padding: '1%' }}>ScannAR</Typography>
         <Carousel
           swipeable
           dynamicHeight
           showThumbs={false}
+          showStatus={false}
         >
             <div style={carouselItem}>
               <img src={ScannarCustomer.coverImage} alt="Project" style={image}></img>
